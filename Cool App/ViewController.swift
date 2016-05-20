@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bg: UIImageView!
+    @IBOutlet weak var boomButton: UIImageView!
+    @IBOutlet weak var coolButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func coolButton(sender: AnyObject) {
+        bg.hidden = false
+        boomButton.hidden = false
+        coolButton.hidden = true
+        
+    }
 
 }
-
